@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void sumult(int *x, int *y)
+{
+    *x = 3 + 4;
+    *y = 3 * 4;
+}
+
+int main()
+{
+    int a = 0;
+    int b = 0;
+    sumult(&a, &b);
+    printf("3 + 4 = %d\n", a);
+    printf("3 * 4 = %d\n", b);
+    return 0;
+}
